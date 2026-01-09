@@ -18,6 +18,7 @@ public class BookingController {
 
     public ResponseEntity<String> addTicket(@RequestBody BookTicket bookTicket){
           this.bookTicketService.save(bookTicket);
+          // test
          return ResponseEntity.ok("ticket booking successfully");
 
     }
